@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web QLSV</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="main_container">
+    <h3 class="title">WEBSITE QUẢN LÍ SINH VIÊN</h3>
+    <div class="container">
+    <div class="container_left">
+        <span class="stu_infor">Thông tin sinh viên</span>
+        <div class="con_id">
+        <label for="" class="label">Student id:</label>
+        <input type="number" id="id" class="tField">
+        </div>
+        <div class="con_name">
+        <label for="" class="label">Name:</label>
+        <input type="text" id="name" class="tField">
+        </div>
+        <div class="con_age">
+        <label for="" class="label">Age:</label>
+        <input type="number" id="age" class="tField">
+        </div>
+        <div class="con_btn">
+            <button onclick="add()" class="button_add">Submit</button>
+            <button onclick="search()" class="button_search" placeholder="Tên sinh viên cần tìm">SearchByName</button>
+        </div>
+        <div>
+            <input type="text" id="tField_Search" class="tf_search">
+        </div>
+    </div>
+    <div class="container_right">
+        <span class="list_stu">Danh Sách Sinh Viên</span>
+        <table class="table" id="show">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="table" id="show_Search" style="display: none;">
+            <thead>
+                <tr>
+                    <th>ID_Search</th>
+                    <th>Name_Search</th>
+                    <th>Age_Search</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    </div>
+    <script src="student.js"></script>
+</body>
+</html>
